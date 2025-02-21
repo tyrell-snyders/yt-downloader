@@ -7,6 +7,11 @@ pub struct Info {
     pub data: String,
 }
 
+#[derive(Deserialize)]
+pub struct Query {
+    pub data: String,
+}
+
 #[derive(Serialize)]
 pub struct VideoResponse {
     pub id: String,
