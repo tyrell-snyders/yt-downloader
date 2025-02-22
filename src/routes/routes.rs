@@ -64,8 +64,8 @@ pub async fn download_video(info: web::Json<Info>) -> Result<HttpResponse, Error
 }
 #[get("/download/yt")]
 pub async fn download_yt(req: HttpRequest, query: web::Query<Query>) -> Result<HttpResponse, Error> {
-    let yt_dl_path = "C:\\Users\\Tyrell\\Downloads\\Programs\\yt-dlp.exe";
-    let out_dir = "C:\\Users\\Tyrell\\Downloads";
+    let yt_dl_path = ""; //yt-dlp.exe directory
+    let out_dir = ""; // output directory
 
     println!("Downloading video: {:?}", query.data);
 
